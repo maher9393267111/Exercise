@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  @apply bg-green-800;
+}
+
+.ant-btn-primary:not(.ant-btn-dangerous) {
+  /* color: ${readableColor(token.colorPrimary)}; */
+  @apply bg-green-800 hover:bg-green-800
+
+
+
+  /* &:active {
+    color: ${readableColor(token.colorPrimaryActive)} !important;
+    background: ${token.colorPrimaryActive} !important;
+  } */;
+}
+@layer components {
+
+}
+
+.item {
+  border-radius: 50%;
+ }
+.active{
+  color:white !important;
+  background-color: black !important;
+}
+.Mui-selected{
+  background-color: black !important;
+  color: white !important;
+}
